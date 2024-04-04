@@ -19,14 +19,15 @@ const delEmployee=function(e){
     let employeeNo=Number(e.target.id.trim().slice(-1));
     console.log(employeeNo);
     let indexE=0;
-    for(let i=0;i<addEmployee.length;i++){
-        if(employeeNo==addEmployee[i].id){
+    for(let i=0;i<allEmployees.length;i++){
+        //console.log("hello="+allEmployees[i].id)
+        if(employeeNo==Number(allEmployees[i].id)){
             indexE=i;
         }
     }
     console.log(indexE);
-   let employeeDeleted=allEmployees[employeeNo-1].name;
-    allEmployees.splice((employeeNo-1),1);
+   let employeeDeleted=allEmployees[indexE].name;
+    allEmployees.splice((indexE),1);
     console.log(allEmployees);
     let delPid="spd"+employeeNo;
     let delP=document.getElementById(delPid);
