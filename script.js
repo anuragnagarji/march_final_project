@@ -42,7 +42,7 @@ let AddBtn=document.getElementById("addUser");
  
 AddBtn.addEventListener("click",addingData);
  function addingData(){
-    if((inputs[0].value.trim()!="")&&(inputs[0].value.trim()!="")&&(inputs[0].value.trim()!="")){
+    if((inputs[0].value.trim()!="")&&(inputs[1].value.trim()!="")&&(inputs[2].value.trim()!="")){
        console.log(inputs[0].value,inputs[1].value,inputs[2].value);
         addEmployee(inputs[0].value,inputs[1].value,inputs[2].value);
         err.style.display="none";
