@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Employee data</title>
+    <style>
+        body{  margin: 50px 35px;
+            background-color: black;
+            color:azure; 
+            font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.05px;
+text-align: left;
+
+        }
+        table{
+            width: 60%;
+        }
+        td{
+            text-align: left;
+            width: 30%;
+            height: 20px;
+            padding-top: 0px;
+            margin-top: 0px;
+            
+        }
+        .input_d{
+            width: 300px;
+height: 36px;
+top: 173px;
+left: 58px;
+margin-inline-end: 30px;
+border-radius: 5px ;
+border: 1px solid whitesmoke;
+opacity: 0px;
+background-color: black;
+color: white;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+        }
+        #addUser{
+            font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+            margin-top: 20px;
+            width: 226px;
+height: 58px;
+top: 308px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+
+        }
+        #p1{
+            width: 205px;
+height: 29px;
+top: 436px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+}
+#d2{
+    margin-top: 30px;
+}
+#sp1{
+    color: #FFFFFF80;
+
+}
+#error{
+    display:none;
+    color: red;
+}
+#success{
+ color:green;
+ display: none;
+}
+.data_span{
+   
+    width: 450px;
+height: 90px;
+padding: 10px;
+word-spacing: 10px;
+top: 173px;
+left: 58px;
+margin-inline-end: 30px;
+border-radius: 5px ;
+border: 1px solid whitesmoke;
+opacity: 0px;
+background-color: black;
+color: white;
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+        
+}
+.DelBtn{
+    
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+            margin-top: 20px;
+            width: 126px;
+height: 50px;
+top: 308px;
+left: 58px;
+gap: 0px;
+opacity: 0px;
+border-radius:25px ;
+    
+}
+    </style>
+</head>
+<body>
+    <p>New Employee</p>
+  <div>
+    <table>
+        <tr><td>Enter Name</td><td>Enter Profession</td><td>Enter Age</td><tr>
+        <tr><td><input id="name" class="input_d" type="text"></td><td><input id="Profession" class="input_d"></td><td><input id="age" type="text" class="input_d"></td><tr>
+      </table>
+      <button id="addUser">Add User</button>
+  </div>
+<div id="d2">
+    <p id="error">Error : Please Make sure All the fields are filled before adding in an employee !</p>
+     <p id="success">Success : Employee Added!</p>
+    <p id="p1">Added Employees</p>
+    <div id="d3">
+        <span id="sp1">You have 0 Employees</span>
+    </div>
+</div>
+<div id="table"></div>
+<script src="./script.js"></script>
+</body>
+</html>
